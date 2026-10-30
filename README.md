@@ -18,7 +18,7 @@ O principal destaque é uma **hero section cinematográfica**: o vídeo de monta
 - **Serviços:** apresentação de troca de tela, bateria, manutenção e produtos disponíveis na loja.
 - **Como funciona:** etapas de contato, avaliação e reparo apresentadas de forma simples.
 - **Localização:** mapa do Google Maps, endereço da unidade e link para abrir rotas.
-- **Contato:** chamadas para ação direcionadas ao WhatsApp, assim que o número oficial for configurado.
+- **Contato:** chamadas para ação direcionadas ao WhatsApp oficial [+55 (83) 99865-4599](https://wa.me/5583998654599), com mensagem pré-preenchida.
 - **Design responsivo:** layout adaptado a celulares, tablets e computadores.
 - **Acessibilidade e desempenho:** navegação semântica, atenção a contraste e movimento reduzido, carregamento progressivo de mídia e animações leves.
 
@@ -36,7 +36,7 @@ A interface segue uma proposta **clean e premium**, inspirada em princípios de 
 
 ## Tecnologias
 
-Stack definida para o MVP:
+Stack utilizada no MVP:
 
 - **React** — construção da interface em componentes.
 - **TypeScript** — organização e tipagem do código.
@@ -45,7 +45,7 @@ Stack definida para o MVP:
 - **HTML5 Video API** — sincronização entre reprodução e scroll.
 - **Google Maps** — incorporação de mapa e links de navegação.
 
-> Esta documentação descreve a arquitetura planejada. Confirme as dependências no `package.json` quando a implementação estiver concluída.
+As dependências e suas versões estão em `package.json` e `package-lock.json`.
 
 ## Executando localmente
 
@@ -69,14 +69,14 @@ Abra o endereço exibido no terminal após executar `npm run dev`.
 
 ## Organização dos arquivos
 
-Estrutura de referência para a implementação:
+Estrutura da implementação:
 
 ```text
 public/
 ├── images/
 │   ├── apple-solution-logo.png
-│   ├── hero-poster-desmontado.webp
-│   └── hero-poster-montado.webp
+│   ├── hero-poster-desmontado.png
+│   └── hero-poster-montado.png
 └── videos/
     └── hero_section.mp4
 
@@ -102,7 +102,8 @@ CEP 58063-300
 
 Os dados comerciais devem ser centralizados em `src/config/site.ts`. Antes de publicar, confira:
 
-- Número de WhatsApp oficial e mensagem pré-preenchida.
+- WhatsApp configurado em `src/config/site.ts`: `5583998654599`.
+- Mensagem inicial: “Olá! Vim pelo site da Apple Solution e gostaria de solicitar um orçamento.”
 - Instagram e horários de atendimento, se forem exibidos.
 - Localização correta do estabelecimento no Google Maps.
 - Comportamento do vídeo no Safari, Chrome e dispositivos móveis.
@@ -110,7 +111,7 @@ Os dados comerciais devem ser centralizados em `src/config/site.ts`. Antes de pu
 
 ## Status
 
-**MVP em desenvolvimento.** O projeto foi planejado para priorizar apresentação visual, clareza de navegação e conversão por contato — sem funcionalidades comerciais complexas nesta fase.
+**MVP implementado.** O projeto foi desenvolvido para priorizar apresentação visual, clareza de navegação e conversão por contato — sem funcionalidades comerciais complexas nesta fase.
 
 ---
 
