@@ -12,3 +12,8 @@ export const maps = {
 };
 export const whatsappMessage = 'Olá! Vim pelo site da Apple Solution e gostaria de solicitar um orçamento.';
 export const contactUrl = (subject = whatsappMessage) => `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(subject)}`;
+// Mensagens usadas na página de Produtos.
+export const productMessage = (nome: string, disponivel = true) => disponivel
+  ? `Olá! Vim pelo site da Apple Solution e tenho interesse no produto: ${nome}. Poderia me passar mais informações?`
+  : `Olá! Vim pelo site da Apple Solution e gostaria de saber quando o produto ${nome} estará disponível.`;
+export const defaultWarranty = 'Condições de garantia informadas no orçamento.';
